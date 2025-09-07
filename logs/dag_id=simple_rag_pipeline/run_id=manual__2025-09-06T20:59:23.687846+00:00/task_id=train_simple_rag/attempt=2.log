@@ -1,0 +1,73 @@
+{"timestamp":"2025-09-06T21:04:34.032384","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-06T21:04:34.033222","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/simple_rag_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-06T21:04:34.295722Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-06T21:04:34.297846Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-06T21:04:34.300237Z","level":"info","event":"Current task name:train_simple_rag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-06T21:04:34.301854Z","level":"info","event":"Dag name:simple_rag_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-06T21:04:34.296862","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:34.298531","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/rag_pipeline && python simple_rag_training.py --evaluate --eval-samples 5']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:34.316438","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.958792","level":"info","event":"🚀 Starting Simple RAG Training Pipeline","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.960501","level":"info","event":"==================================================","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.960675","level":"info","event":"📊 Generating sample data...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.960965","level":"info","event":"💾 Generated and saved 1000 samples to data/rag_training_data.parquet","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.961219","level":"info","event":"🎯 Training Simple RAG Model","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.961302","level":"info","event":"📊 Training data: 1000 samples","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.961398","level":"info","event":"📊 Phase 1: Training complexity classifier...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.961527","level":"info","event":"   ✅ Complexity classifier accuracy: 1.000","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.961900","level":"info","event":"📊 Phase 2: Building retrieval system...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.961998","level":"info","event":"   ✅ Retrieval system built with 1000 contexts","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.962388","level":"info","event":"📊 Phase 3: Training response generator...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.962573","level":"info","event":"   ✅ Response generator trained with 1000 examples","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.962636","level":"info","event":"✅ RAG model training completed!","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.962710","level":"info","event":"⏱️ Training completed in 0.08 seconds","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.962894","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.963196","level":"info","event":"==================================================","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.963270","level":"info","event":"🔍 Evaluating RAG model on 5 samples...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.963437","level":"info","event":"   Sample 1:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.965639","level":"info","event":"   Q: How do I create a function to add two numbers?...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.965781","level":"info","event":"   A: def example_function(param1, param2):","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.965833","level":"info","event":"    \"\"\"Funct...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.965869","level":"info","event":"   Complexity: moderate","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.965934","level":"info","event":"   Relevance: 0.000","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.965981","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966014","level":"info","event":"   Sample 2:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966237","level":"info","event":"   Q: Write a Python function that multiplies two number...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966303","level":"info","event":"   A: def example_function(param1, param2):","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966366","level":"info","event":"    \"\"\"Funct...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966396","level":"info","event":"   Complexity: moderate","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966434","level":"info","event":"   Relevance: 0.239","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966480","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966545","level":"info","event":"   Sample 3:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966587","level":"info","event":"   Q: Can you help me write code to calculate factorial?...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966637","level":"info","event":"   A: def is_prime(n):","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966692","level":"info","event":"    return n > 1 and all(n % i !=...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966747","level":"info","event":"   Complexity: moderate","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966790","level":"info","event":"   Relevance: 0.000","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966837","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966865","level":"info","event":"   Sample 4:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966914","level":"info","event":"   Q: What is the best way to reverse a string in Python...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.966962","level":"info","event":"   A: def factorial(n):","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967015","level":"info","event":"    return 1 if n <= 1 else n * ...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967252","level":"info","event":"   Complexity: moderate","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967309","level":"info","event":"   Relevance: 0.378","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967358","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967383","level":"info","event":"   Sample 5:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967415","level":"info","event":"   Q: Create a function that checks if a number is prime...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967466","level":"info","event":"   A: def example_function(param1, param2):","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967508","level":"info","event":"    \"\"\"Funct...","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967539","level":"info","event":"   Complexity: moderate","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967560","level":"info","event":"   Relevance: 0.500","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967579","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967599","level":"info","event":"📊 Evaluation Summary:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967707","level":"info","event":"   Average Context Relevance: 0.223","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.967815","level":"info","event":"   Average Answer Length: 100.4 characters","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.968148","level":"info","event":"   Complexity Distribution: {'moderate': 5}","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.968303","level":"info","event":"💾 Evaluation results saved to evaluation_results/simple_rag_evaluation_20250906_210437.json","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.968440","level":"info","event":"","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:37.968487","level":"info","event":"✅ Simple RAG Pipeline completed successfully!","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:38.151941","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-09-06T21:04:38.155520","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019920d3-b416-795f-9a70-728b9063b3fc'), task_id='train_simple_rag', dag_id='simple_rag_pipeline', run_id='manual__2025-09-06T20:59:23.687846+00:00', try_number=2, map_index=-1, hostname='623781aea6e2', context_carrier={}, task=<Task(BashOperator): train_simple_rag>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 9, 6, 21, 4, 30, 664128, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None, log_url='http://localhost:8080/dags/simple_rag_pipeline/runs/manual__2025-09-06T20%3A59%3A23.687846%2B00%3A00/tasks/train_simple_rag?try_number=2')","logger":"task"}
+{"timestamp":"2025-09-06T21:04:38.272171Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-06T21:04:38.273687Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-06T21:04:38.276826Z","level":"info","event":"Task operator:<Task(BashOperator): train_simple_rag>","chan":"stdout","logger":"task"}

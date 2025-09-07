@@ -1,0 +1,72 @@
+# Core ML and Data Science
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+scipy>=1.9.0
+
+# Distributed Computing Engines
+dask[complete]>=2023.1.0
+distributed>=2023.1.0
+dask-ml>=2023.1.0
+pyspark>=3.4.0
+ray[default]>=2.0.0
+
+# Traditional ML (from existing pipeline)
+lightgbm>=3.3.0
+xgboost>=1.6.0
+
+# Text Processing and NLP
+nltk>=3.7
+spacy>=3.4.0
+transformers>=4.20.0
+tokenizers>=0.13.0
+sentence-transformers>=2.2.0
+
+# Vector Databases and Search
+faiss-cpu>=1.7.0
+chromadb>=0.3.0
+elasticsearch>=8.0.0
+
+# Model Serialization and Security
+skops>=0.5.0
+joblib>=1.2.0
+
+# Security and SBOM
+pip-audit>=2.4.0
+cyclonedx-bom>=3.6.0
+
+# Hugging Face Integration
+huggingface-hub>=0.14.0
+datasets>=2.10.0
+
+# Evaluation and Metrics
+rouge-score>=0.1.2
+bleu>=0.2.0
+bert-score>=0.3.13
+
+# Code Execution and AST
+ast-decompiler>=0.7.0
+black>=22.0.0
+flake8>=5.0.0
+
+# Utilities
+tqdm>=4.64.0
+click>=8.1.0
+pyyaml>=6.0
+python-dotenv>=0.20.0
+
+# Visualization (optional)
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+
+# Development and Testing
+pytest>=7.1.0
+pytest-cov>=3.0.0
+jupyter>=1.0.0
+
+# Web Framework (for serving)
+fastapi>=0.95.0
+uvicorn>=0.20.0
+gradio>=3.20.0
+
