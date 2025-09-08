@@ -31,7 +31,7 @@ with DAG(
         docker_url="unix://var/run/docker.sock",
         network_mode="bridge",
         environment={
-        "HF_TOKEN": "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",
+        "HF_TOKEN": "XXXX",
         },
         mounts=[
             Mount(
